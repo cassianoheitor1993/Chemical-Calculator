@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chemical Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="scripts/script.js" async defer></script>
+    </head>
+    <body onload="getDateTimeJs()">
+        <header><h1>Chemical Element Properties</h1></header>
+        <div class="periodic-table" id="periodic-table-id">
+            
+        <form>
+            <div class="option-select">
+                <label id="density-lbl" for="elements">Select the chemical element:</label><br>
+                <select name="elements" class="chemElements" id="chemElements-id" onchange="findElementData()">
+                    <option></option>
+                </select>
+            </div>
+            <div class="elementDetails">
+                <div>
+                    <label id="atomicNumber-lbl">Atomic Number</label>
+                    <div class="elemData" id="atomicNumber"></div>
+                </div>
+                <div>
+                    <label id="symbol-lbl">Symbol</label>
+                    <div class="elemData" id="symbol"></div>
+                </div>
+                <div>
+                    <label id="name-lbl">Name</label>
+                    <div class="elemData" id="name"></div>
+                </div>
+                <div>
+                    <label id="atomicMass-lbl">Atomic Mass</label>
+                    <div class="elemData" id="atomicMass"></div>
+                </div>
+                <div>
+                    <label id="electronicConfiguration-lbl">Electronic Config.</label>
+                    <div class="elemData" id="electronicConfiguration"></div>
+                </div>
+                <div>
+                    <label id="electronegativity-lbl">Electronegativity</label>
+                    <div class="elemData" id="electronegativity"></div>
+                </div>
+                <div>
+                    <label id="atomicRadius-lbl">Atomic Radius</label>
+                    <div class="elemData" id="atomicRadius"></div>
+                </div>
+                <div>
+                    <label id="ionRadius-lbl">Ion Radius</label>
+                    <div class="elemData" id="ionRadius"></div>
+                </div>
+                <div>
+                    <label id="vanDerWaalsRadius-lbl">Van-Der-Waals Radius</label>
+                    <div class="elemData" id="vanDerWaalsRadius"></div>
+                </div>
+                <div>
+                    <label id="ionizationEnergy-lbl">Ionization Energy</label>
+                    <div class="elemData" id="ionizationEnergy"></div>
+                </div>
+                <div>
+                    <label id="electronAffinity-lbl">Electroaffinity</label>
+                    <div class="elemData" id="electronAffinity"></div>
+                </div>
+                <div>
+                    <label id="oxidationStates-lbl">Oxidation States</label>
+                    <div class="elemData" id="oxidationStates"></div>
+                </div>
+                <div>
+                    <label id="standardState-lbl">Standard State</label>
+                    <div class="elemData" id="standardState"></div>
+                </div>
+                <div>
+                    <label id="bondingType-lbl">Bondind Type</label>
+                    <div class="elemData" id="bondingType"></div>
+                </div>
+                <div>
+                    <label id="meltingPoint-lbl">Melting Point</label>
+                    <div class="elemData" id="meltingPoint"></div>
+                </div>
+                <div>
+                    <label id="boilingPoint-lbl">Boiling Point</label>
+                    <div class="elemData" id="boilingPoint"></div>
+                </div>
+                <div>
+                    <label id="density-lbl">Density</label>
+                    <div class="elemData" id="density"></div>
+                </div>
+                <div>
+                    <label id="groupBlock-lbl">Group Block</label>
+                    <div class="elemData" id="groupBlock"></div>
+                </div>
+                <div>
+                    <label id="yearDiscovered-lbl">Year Discovered</label>
+                    <div class="elemData" id="yearDiscovered"></div>
+                </div>
+                <div>
+                    <label id="block-lbl">Block</label>
+                    <div class="elemData" id="block"></div>
+                </div>
+                <div>
+                    <label id="cpkHexColor-lbl">CpK Hex Color</label>
+                    <div class="elemData" id="cpkHexColor"></div>
+                </div>
+                <div>
+                    <label id="period-lbl">Period</label>
+                    <div class="elemData" id="period"></div>
+                </div>
+                <div>
+                    <label id="group-lbl">Group</label>
+                    <div class="elemData" id="group"></div>
+                </div>
+            </div>
+        </form>
+        
+        </div>
+        
+    </body>
+    <footer id="footer-id">
+        <div id="footer-copy"></div>
+        <div id="footer-date-time"></div>
+    </footer>
+    
+</html>
